@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Button } from 'antd-mobile'
+// import { Button } from 'antd-mobile'
 import Home from './pages/Home'
 import Citylist from './pages/Citylist'
 //配制路由
@@ -15,7 +15,7 @@ export default class App extends Component {
         <Button type="primary">按钮</Button> */}
           {/* 配制路由 */}
           <Route path="/home" component={Home}></Route>
-          <Route path="/citylist" component={Citylist}></Route>
+          <Route exact path="/citylist" component={Citylist}></Route>
         </div>
       </Router>
     )

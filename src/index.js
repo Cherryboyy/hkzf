@@ -4,6 +4,8 @@ import ReactDom from 'react-dom'
 import './index.css'
 //导入antd-mobile样式
 import 'antd-mobile/dist/antd-mobile.css'
+//打入字体图标
+import "./assets/fonts/iconfont.css"
 //导入app组件
 import App from './App'
 ReactDom.render(<App />, document.getElementById("root"))
