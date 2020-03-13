@@ -127,33 +127,33 @@ export default class index extends Component {
         return (
             <div>
                 {/* 搜索栏部分 */}
-          <Flex className='searchBox'>
-              <Flex className='searchLeft'>
-                  <div
-                  className='location'
-                  onClick={()=>{
-                    //  点击跳转citylist
-                    this.props.history.push("/citylist")
-                  }}
-                  >
-                      <span>上海</span>
-                      <i className="iconfont icon-arrow" />
-                  </div>
-                  <div
-                  className='searchForm'
-                  >
-                      <i className="iconfont icon-seach" />
-                      <span>请输入小区或地址</span>
-                  </div>
-              </Flex>
-              <i 
-              className="iconfont icon-map" 
-               onClick={()=>{
-                 //  点击跳转map地图找房
-                 this.props.history.push("/map")
-               }}
-              />
-          </Flex>
+                <Flex className='searchBox'>
+                    <Flex className='searchLeft'>
+                        <div
+                            className='location'
+                            onClick={() => {
+                                //  点击跳转citylist
+                                this.props.history.push("/citylist")
+                            }}
+                        >
+                            <span>上海</span>
+                            <i className="iconfont icon-arrow" />
+                        </div>
+                        <div
+                            className='searchForm'
+                        >
+                            <i className="iconfont icon-seach" />
+                            <span>请输入小区或地址</span>
+                        </div>
+                    </Flex>
+                    <i
+                        className="iconfont icon-map"
+                        onClick={() => {
+                            //  点击跳转map地图找房
+                            this.props.history.push("/map")
+                        }}
+                    />
+                </Flex>
                 <Carousel
                     autoplay={this.state.isplay}
                     infinite

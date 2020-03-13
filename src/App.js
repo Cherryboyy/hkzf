@@ -11,7 +11,7 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="App">
           {/* 我是根组件app
         <Button type="primary">按钮</Button> */}
           {/* 配制路由 */}
